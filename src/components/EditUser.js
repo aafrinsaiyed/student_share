@@ -24,7 +24,7 @@ function EditUser() {
         console.log("Edit User ID:", id);
   
         const response = await axios.get(
-          `http://localhost:5001/api/user/${id}`
+          `https://mern-backenddivb-2.onrender.com/api/user/${id}`
         );
   
         console.log("API Response:", response.data);
@@ -115,7 +115,7 @@ function EditUser() {
 
     try {
       const response = await axios.put(
-        `http://localhost:5001/api/update-user/${id}`,
+        `https://mern-backenddivb-2.onrender.com/api/update-user/${id}`,
         formData
       );
 

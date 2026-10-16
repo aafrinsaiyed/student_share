@@ -102,7 +102,7 @@ function AddUser() {
       }
 
       const response = await axios.post(
-        'http://localhost:5001/api/add-user',
+        'https://mern-backenddivb-2.onrender.com/api/add-user',
         data
       );
 

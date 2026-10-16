@@ -50,7 +50,6 @@ function Login() {
         "https://mern-backenddivb-2.onrender.com/api/login",
         formData
       );
-
       console.log("Login response:", response.data);
 
       if (response.data.status === 1) {
