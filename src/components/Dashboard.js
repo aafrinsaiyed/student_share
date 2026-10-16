@@ -10,7 +10,7 @@ function Dashboard() {
   const getUserData = async () => {
     try {
       const response = await axios.get(
-        'http://localhost:5001/api/get-user'
+        'https://mern-backenddivb-2.onrender.com/api/get-user'
       );
 
       setUsers(response.data.data || []);
@@ -36,7 +36,7 @@ function Dashboard() {
 
     try {
       const response = await axios.delete(
-        `http://localhost:5001/api/delete-user/${id}`
+        `https://mern-backenddivb-2.onrender.com/api/delete-user/${id}`
       );
 
       if (response.data.status === 1) {
