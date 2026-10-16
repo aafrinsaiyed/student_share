@@ -305,12 +305,12 @@ function AddUser() {
             )}
 
             {preview && (
-              <img
-                src={preview}
-                alt="Image preview"
-                className="mt-3 h-24 w-24 object-cover rounded-md border"
-              />
-            )}
+             <img
+             src={preview}
+             alt="Preview of the selected file"
+             className="mt-3 h-24 w-24 object-cover rounded-md border"
+           />
+           )}
           </div>
 
           {/* BUTTONS */}
